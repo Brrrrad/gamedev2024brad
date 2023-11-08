@@ -1,0 +1,89 @@
+<script>
+
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){    
+       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName+'<br>'
+    }
+ }  // end class myAnimal
+ function extendClass() {
+
+   class myTurtle extends myAnimal {
+       myShow(){
+         document.getElementById('myDiv01').innerHTML = this.myName + ' is a great Turtle<br>' 
+        } 
+    }   // end Extended class myTurtle
+
+  myPet = new myTurtle('Hard', 24)
+  myPet.myShow()
+}
+
+class myCat extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat<br>'
+    }
+}    // end extended class myCat
+                                                                                                                                                                                                                                                                                                                                    
+   myPet = new myCat('Fluffy', 14)
+   myPet.myShow()  
+</script>
+
+Version 0.0.1
+<h2 align=center>t2a04-extend-class-by-fred.html</h2>
+
+Extending a pre-existing Class<br>
+
+<h4> Example Class extend code</h4>
+<pre>
+
+ class myCat extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv01').innerHTML = this.myName
+    }                                                                   
+}
+
+</pre>
+
+
+<h4> Example working Classes code</h4>
+
+<input type=button value="Example Class Set and Show Class Animal" onClick="{
+
+  myDog = new myAnimal('Snickers', 5)
+  myDog.myShow()  
+
+}">
+
+<h4> Example extending Class code</h4>
+Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
+
+<input type=button value="Example Extend Class Animal" onClick="{
+
+ class myCat extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat.' + ' He is ' + this.myAge + ' years old<br>';
+    }
+}    // end extended class myCat
+                                                                                                                                                                                                                                                                                                                                    
+   myPet = new myCat('Fluffy', 14)
+   myPet.myShow()  
+
+}">
+
+<input type="button" value="Example Extended Class Animal" onClick="{
+
+    class myTurtle extends myAnimal {
+        myShow(){
+            document.getElementById('myDiv01').innerHTML = this.myName + ' is a great Turtle.' + ' He is ' + this.myAge + ' years old<br>';
+        } 
+    }   // end Extended class myTurtle
+    
+    myPet = new myTurtle('Hard', 24)
+    myPet.myShow()
+}">
+
+<div id="myDiv01">...</div>
+

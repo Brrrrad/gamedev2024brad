@@ -1,0 +1,23 @@
+<html>
+    <h2 align-left>t1ao5-input-output-by-brad.html</h2>
+    <a href="https://w3schools.com/jsref/prop_html_innerHTML.asp">good source for input output javascript innerHTML value</a>
+
+    <h4> Example input output code</h4>
+    <pre>
+        let myIn01 = document.getElementById('myNum01').value
+        document.getElementbyId('myDiv01').innerHTML = myIn01 + ' sqaured = ' + myIn01*myIn01
+    </pre>
+
+    <H4> Example working code</H4>
+
+    <div id="myDiv01">...</div>
+
+    <input id="myNum01" type="number" value="4"><br>
+
+    <input type="button" value="myEvent squares" onclick="{
+        let myIn01 = parseFloat(document.getElementById('myNum01').value)
+        let myAnswer = myIn01 * myIn01
+        document.getElementById('myDiv01').innerHTML =
+            myIn01 + ' squared = ' + myAnswer
+    }"><br>
+</html>

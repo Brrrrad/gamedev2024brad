@@ -1,0 +1,57 @@
+<html>
+    <h2 aling-center>T1a012-objects-by-brrrrad.html</h2>
+
+    <a href=""> good refrence to Javascript Objects</a>
+
+objects are stored named variables
+
+<h4> Example objects code</h4>
+<pre>
+    let myPerson = {
+        "firstname": "John",
+        "lastname": "Doe",
+        "age": "50":
+        "eyecolor": "blue",
+        "haircolor": "brown"
+    }
+</pre>
+
+<h4> Example working objects code</h4>
+
+Nothing: <input type="text" id="myText01" value="Useless at the moment"><br>
+
+<input type="button" value="Example object Set and Show" onclick="{
+    let myPerson = {
+        'firstname' : ' Brad ',
+        'lastname' : ' Magnell ',
+        'age': ' 17 ',
+        'eyecolor' : ' Greenish blue ',
+        'haircolor' : ' sandy ',
+        'status': ' not washed '
+    }
+    document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has Properties: <br>'
+    document.getElementById('myDiv01').innerHTML += 'firstname: ' + myPerson.firstname + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'lastname: ' + myPerson.lastname + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'age: ' + myPerson.age + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'eyecolor:' + myPerson.eyecolor + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'haircolor:' + myPerson.haircolor + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'status:' + myPerson.status + '<br>'  
+}">
+    <input type="button" value="person 2" onclick="{
+        let myPerson = {
+            'firstname': ' karol',
+            'lastname': ' Buda ',
+            'age': ' 17 ',
+            'haircolor': ' blonde ',
+            'status': ' washed '
+        }
+        document.getElementById('myDiv02').innerHTML += 'firstname:' + myPerson.firstname + '<br>' 
+        document.getElementById('myDiv02').innerHTML += 'lastname:' + myPerson.lastname + '<br>' 
+        document.getElementById('myDiv02').innerHTML += 'age:' + myPerson.age + '<br>' 
+        document.getElementById('myDiv02').innerHTML += 'haircolor:' + myPerson.haircolor + '<br>' 
+        document.getElementById('myDiv02').innerHTML += 'status:' + myPerson.status + '<br>' 
+    }">
+<Div id="myDiv01">...</Div>
+
+<Div id="myDiv02">...</Div>
+</html>

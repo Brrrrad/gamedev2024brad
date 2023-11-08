@@ -1,0 +1,30 @@
+<html>
+<h2 align-right>Variables-By-Brad.html</h2>
+
+<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables">good refrence to Variables in javascript and pther languages</a><br>
+Other languages use: bool, int, float, char, string, int_8, int_16 etc<br>
+Note: Javasscript does use var and let for local variables.<br>
+for global variables Mr.Elis prefers to use myVarName
+
+<h4>example input output code</h4>
+<pre>
+    let myIn01 = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML = myIn01
+</pre>
+
+<h4>Example working code</h4>
+
+<div id="myDiv01"> the dog </div>
+
+<input id="myText01" type="text" value="the dog"><br>
+
+<input type="button" value="show Variable" onclick="event.preventDefault(); 
+    let myIn01 = document.getElementById('myText01').value;
+        document.getElementById('myDiv01').innerHTML = myIn01;"><br>
+
+<input type="button" value="Using no variable" onclick="event.preventDefault();
+        document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value;"><br>
+
+
+
+</html>
