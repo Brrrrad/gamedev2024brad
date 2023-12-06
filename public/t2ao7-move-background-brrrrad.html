@@ -1,0 +1,76 @@
+<html>
+    <body id="myBody" style="background-repeat: repeat; background-size: 80%" background="https://wallpapercave.com/wp/wp4782096.jpg">
+
+
+        <script>
+
+            
+            let myGlobalX = 0;
+            let myClock;
+
+            function moveBackgroundLeft() {
+                myGlobalX -= 5;
+                let myTemp = myGlobalX + 'px 0px';
+                document.getElementById('myBody').style.backgroundPosition = myTemp;
+            }
+
+            function moveBackgroundUp() {
+                myGlobalX -= 5;d
+                let myTemp = '0px ' + myGlobalX + 'px';
+                document.getElementById('myBody').style.backgroundPosition = myTemp;
+            }
+
+            function moveBackgroundRight() {
+                myGlobalX -= 5;
+                let myTemp = '0px ' + 'px' + myGlobalX;
+                document.getElementById('myBody').style.backgroundPosition = myTemp;
+            }
+
+            function moveBackgroundDown() {a
+                let myTemp = 'px ' + myGlobalX + '0px';
+                document.getElementById('myBody').style.backgroundPosition = myTemp;
+            }
+
+            function autoBackgroundLeft() {
+                clearInterval(myClock);
+                myClock = setInterval(moveBackgroundLeft, 100);
+            }
+
+            function autoBackgroundUp() {
+                clearInterval(myClock);
+                myClock = setInterval(moveBackgroundUp, 100);
+            }
+
+            function autoBackgroundRight() {
+                clearInterval(myClock);
+                myClock = setInterval(moveBackgroundRight, 100);
+            }
+
+            function autoBackgroundDown() {
+                clearInterval(myClock);
+                myClock = setInterval(moveBackgroundDown, 100);
+            }
+           
+        </script>
+
+        <input id="myButton01" type="button" value="Background move left" onclick="moveBackgroundLeft()">
+        <input id="myButton02" type="button" value="Background move up" onclick="moveBackgroundUp()">
+        <input type="button" value="Auto Background Left" onclick="autoBackgroundLeft()">
+        <input type="button" value="Auto Background Up" onclick="autoBackgroundUp()">
+
+        <input type="button" value="Image Right" style="position:relative; width:275px; height:100px; top:704; left:557;" onclick="{
+          document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+        }"><br><br>
+        <input type="button" value="Image Down" style="position:relative; width:275px; height:100px; top:560; left:869;" onclick="{
+          document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+        }">
+        <input type="button" value="Image Left" style="position:relative; width:275px; height:100px; top:560; left:45;" onclick="{
+          document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+        }">
+        <input type="button" value="Image Up" style="position:relative; width:275px; height:100px; top:560; left:37;" onclick="{
+          document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+        }">
+      <img id="myImage01" style="position:relative; width:100px; height:80px; top:80px; left:80px;" src="https://vignette.wikia.nocookie.net/fortnite/images/6/67/Victory_Royale_Slate_-_Fortnite.png/revision/latest?cb=20191015111202">
+
+</html>
+
