@@ -16,5 +16,12 @@
 <li><a href="https://brrrrad.github.io/gamedev2024brad/public/t1a012-objects-by-brrrrad.html">Objects</a>
 <li><a href="https://brrrrad.github.io/gamedev2024brad/public/t1ao13-Classes-by-brrrrad.html">Classes</a>
 <li><a href="https://brrrrad.github.io/gamedev2024brad/public/t1ao14-extended-class-by-brrrrad.html">extended classes </a>
+ <li><a href="https://brrrrad.github.io/gamedev2024brad/public/t2ao6-spy-name-by-brrrrad.html">spy name</a>
+<li><a href="https://brrrrad.github.io/gamedev2024brad/public/t2ao7-move-background-brrrrad.html">move background</a>
+<li><a href="https://brrrrad.github.io/gamedev2024brad/public/t2ao8-canvas-by-brrrrad.html">canvas</a>
+<li><a href="https://brrrrad.github.io/gamedev2024brad/public/t2ao9-local-storage-by-brrrrad.html">local storage</a>
+<li><a href="https://brrrrad.github.io/gamedev2024brad/public/t2ao10-sound-by-brrrrad.html">sound</a>
+<li><a href="https://brrrrad.github.io/gamedev2024brad/public/t2ao11-game-template-by-brrrrad.html">game template</a>
+<li><a href="https://brrrrad.github.io/gamedev2024brad/public/t2aoz-my-motion-by-brrrrad.html">my motion</a>
 <li><a href="https://brrrrad.github.io/gamedev2024brad/public/work-not-screentime.md">work not screentime</a>
 <li><a href="https://github.com/Brrrrad/gamedev2024brad">github</a>
