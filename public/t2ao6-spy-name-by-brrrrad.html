@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t2ao15-spy-name-by-brrrrad.html</title>
+</head>
+<body>
+    <h1 style="text-align: center;">t2ao15-spy-name-by-brrrrad.html</h1>
+    
+    <textarea id="myArea01" rows="4" cols="70">hello how are you</textarea>
+
+    <input type="button" value="encrypt" onclick="{
+        let myTemp = '';
+        let myString = document.getElementById('myArea01').value.toLowerCase().split('');
+        for (let myLoop = 0; myLoop < myString.length; myLoop++) {
+            if (myString[myLoop] == 'a'){
+                myTemp = 'q';
+            }
+            if (myString[myLoop] == 'b'){
+                myTemp = 'w';
+            }
+            if (myString[myLoop] == 'c'){
+                myTemp = 'e'; 
+            }
+            if (myString[myLoop] == 'd'){
+                myTemp = 'r';
+            }
+            if (myString[myLoop] == 'e'){
+                myTemp = 't';
+            }
+            if (myString[myLoop] == 'f'){
+                myTemp = 'y';
+            }
+            if (myString[myLoop] == 'g'){
+                myTemp = 'u';
+            }
+            if (myString[myLoop] == 'h'){
+                myTemp = 'i';
+            }
+            if (myString[myLoop] == 'i'){
+                myTemp = 'o';
+            }
+            if (myString[myLoop] == 'j'){
+                myTemp = 'p';
+            }
+            if (myString[myLoop] == 'k'){
+                myTemp = 'a';
+            }
+            if (myString[myLoop] == 'l'){
+                myTemp = 's';
+            }
+            if (myString[myLoop] == 'm'){
+                myTemp = 'd';
+            }
+            if (myString[myLoop] == 'n'){
+                myTemp = 'f';
+            }
+            if (myString[myLoop] == 'o'){
+                myTemp = 'g';
+            }
+            if (myString[myLoop] == 'p'){
+                myTemp = 'h';
+            }
+            if (myString[myLoop] == 'q'){
+                myTemp = 'j';
+            }
+            if (myString[myLoop] == 'r'){
+                myTemp = 'k';
+            }
+            if (myString[myLoop] == 's'){
+                myTemp = 'l';
+            }
+            if (myString[myLoop] == 't'){
+                myTemp = 'z';
+            }
+            if (myString[myLoop] == 'u'){
+                myTemp = 'x';
+            }
+            if (myString[myLoop] == 'v'){
+                myTemp = 'c';
+            }
+            if (myString[myLoop] == 'w'){
+                myTemp = 'v';
+            }
+            if (myString[myLoop] == 'x'){
+                myTemp = 'b';
+            }
+            if (myString[myLoop] == 'y'){
+                myTemp = 'n';
+            }
+            if (myString[myLoop] == 'z'){
+                myTemp = 'm';
+            }
+            if (myString[myLoop] == ' '){
+                myTemp = '/';
+            }
+            myString[myLoop] = myTemp;
+        }
+        document.getElementById('myArea02').value = myString.join('');
+    }">
+
+    <textarea id="myArea02" rows="4" cols="70">...</textarea>
+
+    <input type="button" value="decrypt" onclick="{
+        let myTemp = '';
+        let myString = document.getElementById('myArea02').value.toLowerCase().split('');
+        for (let myLoop = 0; myLoop < myString.length; myLoop++) {console.log
+            if (myString[myLoop] == 'q'){
+                myTemp = 'a';
+            }
+            if (myString[myLoop] == 'w'){
+                myTemp = 'b';
+            }
+            if (myString[myLoop] == 'e'){
+                myTemp = 'c';
+            }
+            if (myString[myLoop] == 'r'){
+                myTemp = 'd';
+            }
+            if (myString[myLoop] == 't'){
+                myTemp = 'e';
+            }
+            if (myString[myLoop] == 'y'){
+                myTemp = 'f';
+            }
+            if (myString[myLoop] == 'u'){
+                myTemp = 'g';
+            }
+            if (myString[myLoop] == 'i'){
+                myTemp = 'h';
+            }
+            if (myString[myLoop] == 'o'){
+                myTemp = 'i';
+            }
+            if (myString[myLoop] == 'p'){
+                myTemp = 'j';
+            }
+            if (myString[myLoop] == 'a'){
+                myTemp = 'k';
+            }
+            if (myString[myLoop] == 's'){
+                myTemp = 'l';
+            }
+            if (myString[myLoop] == 'd'){
+                myTemp = 'm';
+            }
+            if (myString[myLoop] == 'f'){
+                myTemp = 'n';
+            }
+            if (myString[myLoop] == 'g'){
+                myTemp = 'o';
+            }
+            if (myString[myLoop] == 'h'){
+                myTemp = 'p';
+            }
+            if (myString[myLoop] == 'j'){
+                myTemp = 'q';
+            }
+            if (myString[myLoop] == 'k'){
+                myTemp = 'r';
+            }
+            if (myString[myLoop] == 'l'){
+                myTemp = 's';
+            }
+            if (myString[myLoop] == 'z'){
+                myTemp = 't';
+            }
+            if (myString[myLoop] == 'x'){
+                myTemp = 'u';
+            }
+            if (myString[myLoop] == 'c'){
+                myTemp = 'v';
+            }
+            if (myString[myLoop] == 'v'){
+                myTemp = 'w';
+            }
+            if (myString[myLoop] == 'b'){
+                myTemp = 'x';
+            }
+            if (myString[myLoop] == 'n'){
+                myTemp = 'y';
+            }
+            if (myString[myLoop] == 'm'){
+                myTemp = 'z';
+            }
+            if (myString[myLoop] == '/'){
+                myTemp = ' ';
+            }
+            myString[myLoop] = myTemp;
+        }
+        document.getElementById('myArea01').value = myString.join('');
+    }">
+</body>
+<script>
+const encryptionMap = {
+    'a': 'q', 'b': 'w', 'c': 'e', 'd': 'r', 'e': 't',
+    'f': 'y', 'g': 'u', 'h': 'i', 'i': 'o', 'j': 'p',
+    'k': 'a', 'l': 's', 'm': 'd', 'n': 'f', 'o': 'g',
+    'p': 'h', 'q': 'j', 'r': 'k', 's': 'l', 't': 'z',
+    'u': 'x', 'v': 'c', 'w': 'v', 'x': 'b', 'y': 'n',
+    'z': 'm', ' ': '/'
+};
+
+const decryptionMap = {};
+// Create the decryption map by reversing the encryption map
+for (const [key, value] of Object.entries(encryptionMap)) {
+    decryptionMap[value] = key;
+}
+
+function applySubstitution(inputString, substitutionMap) {
+    return inputString.toLowerCase().split('').map(char => substitutionMap[char] || char).join('');
+}
+
+document.getElementById('myArea02').value = applySubstitution(document.getElementById('myArea01').value, encryptionMap);
+
+document.getElementById('myArea01').value = applySubstitution(document.getElementById('myArea02').value, decryptionMap);
+</script>
+</html>
+
+<div id="Div01">...</div>
+
+ 
