@@ -15,7 +15,7 @@
             }
 
             function moveBackgroundUp() {
-                myGlobalX += 1;
+                myGlobalX -= 1;
                 let myTemp = '0px ' + myGlobalX + 'px';
                 document.getElementById('myBody').style.backgroundPosition = myTemp;
             }
@@ -27,7 +27,7 @@
             }
 
             function moveBackgroundDown(){ 
-                myGlobalX -= 1;
+                myGlobalX += 1;
                 let myTemp = '0px ' + myGlobalX + 'px';
                 document.getElementById('myBody').style.backgroundPosition = myTemp;
             }
