@@ -1,5 +1,5 @@
 <html>
-    <body id="myBody" style="background-repeat: repeat; background-size: 80%" background="https://wallpapercave.com/wp/wp4782096.jpg">
+    <body id="myBody" style="background-repeat: repeat; background-size: 80%" background="https://brrrrad.github.io/gamedev2024brad/public/aesthetic squares.jpg">
 
 
         <script>
@@ -9,56 +9,61 @@
             let myClock;
 
             function moveBackgroundLeft() {
-                myGlobalX -= 5;
+                myGlobalX -= 1;
                 let myTemp = myGlobalX + 'px 0px';
                 document.getElementById('myBody').style.backgroundPosition = myTemp;
             }
 
             function moveBackgroundUp() {
-                myGlobalX -= 5;d
+                myGlobalX += 1;
                 let myTemp = '0px ' + myGlobalX + 'px';
                 document.getElementById('myBody').style.backgroundPosition = myTemp;
             }
 
             function moveBackgroundRight() {
-                myGlobalX -= 5;
-                let myTemp = '0px ' + 'px' + myGlobalX;
+                myGlobalX += 1;
+                let myTemp = myGlobalX + 'px'   ;
                 document.getElementById('myBody').style.backgroundPosition = myTemp;
             }
 
-            function moveBackgroundDown() {a
-                let myTemp = 'px ' + myGlobalX + '0px';
+            function moveBackgroundDown(){ 
+                myGlobalX -= 1;
+                let myTemp = '0px ' + myGlobalX + 'px';
                 document.getElementById('myBody').style.backgroundPosition = myTemp;
             }
 
             function autoBackgroundLeft() {
                 clearInterval(myClock);
-                myClock = setInterval(moveBackgroundLeft, 100);
+                myClock = setInterval(moveBackgroundLeft, 10);
             }
 
             function autoBackgroundUp() {
                 clearInterval(myClock);
-                myClock = setInterval(moveBackgroundUp, 100);
+                myClock = setInterval(moveBackgroundUp, 10);
             }
 
             function autoBackgroundRight() {
                 clearInterval(myClock);
-                myClock = setInterval(moveBackgroundRight, 100);
+                myClock = setInterval(moveBackgroundRight, 10);
             }
 
             function autoBackgroundDown() {
                 clearInterval(myClock);
-                myClock = setInterval(moveBackgroundDown, 100);
+                myClock = setInterval(moveBackgroundDown, 10);
             }
            
         </script>
 
         <input id="myButton01" type="button" value="Background move left" onclick="moveBackgroundLeft()">
         <input id="myButton02" type="button" value="Background move up" onclick="moveBackgroundUp()">
+        <input id="myButton03" type="button" value="Background move right" onclick="moveBackgroundRight()">
+        <input id="myButton04" type="button" value="Background move down" onclick="moveBackgroundDown()">
         <input type="button" value="Auto Background Left" onclick="autoBackgroundLeft()">
         <input type="button" value="Auto Background Up" onclick="autoBackgroundUp()">
+        <input type="button" value="Auto Background Right" onclick="autoBackgroundRight()">
+        <input type="button" value="Auto Background Down" onclick="autoBackgroundDown()">
 
-        <input type="button" value="Image Right" style="position:relative; width:275px; height:100px; top:704; left:557;" onclick="{
+        <input type="button" value="Image Right" style="position:relative; width:275px; height:100px; top:704; left:-80;" onclick="{
           document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
         }"><br><br>
         <input type="button" value="Image Down" style="position:relative; width:275px; height:100px; top:560; left:869;" onclick="{
