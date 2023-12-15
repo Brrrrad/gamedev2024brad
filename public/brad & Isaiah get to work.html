@@ -1,0 +1,29 @@
+<html>
+    <h1 aling-center>this is an essay</h1>
+    
+<input id="Num01" value="7">
+
+<input type="button" value="im a button" onclick="{
+    let In01 = parseFloat(document.getElementById('Num01').value)
+    if (In01 >=3){
+        document.getElementById('Div01').innerHTML = 'brad and isaiah both get to work now' 
+    } else {
+        if(In01 <= 1){
+            document.getElementById('Div01').innerHTML = 'just kidding do it later'
+        } 
+    }   
+}">
+
+<input type="button" value="click me" onclick="{
+        document.getElementById('Div01').innerHTML = 'isaiah get to work'
+    }">
+
+<input type="button" value="no click me" onclick="{
+    document.getElementById('Div01').innerHTML = 'brad get to work'
+}">
+<input type="button" value="guess who?" onclick="{
+    document.getElementById('Div02').innerHTML = 'karrollaaaaaauuuuuhhhhh'
+}">
+    <div id="Div01">...</div>
+    <div id="Div02">..</div>
+</html>
